@@ -32,7 +32,6 @@
    "executionRoleArn": "arn:aws:iam::342174697371:role/ecsTaskExecutionRole",
    "family": "fargate-task-definition",
    "memory": "512",
-   "networkMode": "awsvpc",
    "requiresCompatibilities": [ 
        "FARGATE" 
     ]
