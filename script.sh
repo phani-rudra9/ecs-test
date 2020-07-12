@@ -1,4 +1,4 @@
-SERVICE="test"
+SERVICE="sample"
 CLUSTER_NAME="sample"
 AWS_REGION="ap-south-1"
  
