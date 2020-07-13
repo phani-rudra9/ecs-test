@@ -1,5 +1,5 @@
 #!/bin/bash
-AWS_REGION="eu-west-2"
+AWS_REGION="ap-south-1"
 TASK_FAMILY="ttn-qa-webapp-task"
 SERVICE_NAME="ttn-qa-webapp-service"
 NEW_DOCKER_IMAGE="tomcat"
