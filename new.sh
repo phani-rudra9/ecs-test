@@ -2,7 +2,7 @@
 AWS_REGION="eu-west-2"
 TASK_FAMILY="ttn-qa-webapp-task"
 SERVICE_NAME="ttn-qa-webapp-service"
-NEW_DOCKER_IMAGE="phani9-devops:22"
+NEW_DOCKER_IMAGE="tomcat"
 CLUSTER_NAME= "sample"
 OLD_TASK_DEF=$(aws ecs describe-task-definition --task-definition $TASK_FAMILY --output json)
 NEW_TASK_DEF=$(echo $OLD_TASK_DEF | jq --arg NDI $NEW_DOCKER_IMAGE '.taskDefinition.containerDefinitions[0].image=$NDI')
