@@ -1,7 +1,7 @@
 #!/bin/bash
 AWS_REGION="ap-south-1"
 TASK_FAMILY="ttn-qa-webapp-task"
-SERVICE_NAME="ttn-qa-webapp-service"
+SERVICE_NAME="ttn-qa-webapp-task"
 NEW_DOCKER_IMAGE="tomcat"
 CLUSTER_NAME= "sample"
 OLD_TASK_DEF=$(aws ecs describe-task-definition --task-definition $TASK_FAMILY --output json)
