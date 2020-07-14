@@ -1,5 +1,5 @@
 SERVICE="test"
-CLUSTER_NAME="sample"
+CLUSTER_NAME="phani"
 AWS_REGION="ap-south-1"
  
 # Register a new Task definition 
