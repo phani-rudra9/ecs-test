@@ -9,7 +9,7 @@
             "-c"
          ],
          "essential": true,
-         "image": "nginx",
+         "image": "httpd:2.4",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
