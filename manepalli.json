@@ -3,7 +3,7 @@
       { 
          
          "essential": true,
-         "image": "tomcat",
+         "image": "phani-dotnet:latest",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
