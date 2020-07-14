@@ -3,7 +3,7 @@
       { 
          
          "essential": true,
-         "image": "nginx",
+         "image": "tomcat",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
