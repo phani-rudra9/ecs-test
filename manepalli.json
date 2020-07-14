@@ -3,7 +3,7 @@
       { 
          
          "essential": true,
-         "image": "phani-python:latest",
+         "image": "phani9-devops:22",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
