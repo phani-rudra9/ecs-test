@@ -3,7 +3,7 @@
       { 
          
          "essential": true,
-         "image": "phani9-devops:22",
+         "image": "nginx",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
