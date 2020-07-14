@@ -6,7 +6,7 @@ AWS_REGION="ap-south-1"
 aws ecs register-task-definition --family fargate-task-definition --cli-input-json file://manepalli.json --region $AWS_REGION
 
     # Update Service in the Cluster
-aws ecs update-service --cluster $CLUSTER_NAME --service $SERVICE --task-definition fargate-task-definition --desired-count 3 --region $AWS_REGION --network-configuration "awsvpcConfiguration={subnets=[subnet-01f5291b725d36de8],securityGroups=[sg-0a5c71d9de22e9cda]}"
+aws ecs update-service --cluster $CLUSTER_NAME --service $SERVICE --task-definition fargate-task-definition --desired-count 3 --region $AWS_REGION
 
 
 
@@ -36,4 +36,4 @@ for old_task in $OLDER_TASK; do
 done    
 
     # Run new tasks with the updated new Task-definition
-aws ecs --region $AWS_REGION run-task --cluster $CLUSTER_NAME --task-definition $CURRENT_TASK_REVISION
+aws ecs --region $AWS_REGION run-task --cluster $CLUSTER_NAME --task-definition $CURRENT_TASK_REVISION  --network-configuration "awsvpcConfiguration={subnets=[subnet-01f5291b725d36de8],securityGroups=[sg-0a5c71d9de22e9cda]}"
