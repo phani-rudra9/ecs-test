@@ -36,4 +36,4 @@ for old_task in $OLDER_TASK; do
 done    
 
     # Run new tasks with the updated new Task-definition
-aws ecs --region $AWS_REGION run-task --cluster $CLUSTER_NAME --task-definition $CURRENT_TASK_REVISION --launch-type FARGATE  --network-configuration "awsvpcConfiguration={subnets=[subnet-01f5291b725d36de8],securityGroups=[sg-0a5c71d9de22e9cda]}"
+aws ecs --region $AWS_REGION run-task --cluster $CLUSTER_NAME --task-definition $CURRENT_TASK_REVISION --launch-type FARGATE  --network-configuration "awsvpcConfiguration={subnets=[subnet-0b2dc4b9111e336b0],securityGroups=[sg-0958146592e4727e3]}"
